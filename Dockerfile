@@ -90,4 +90,5 @@ RUN set -ex \
   && adduser -D www-data \
   && mkdir -p /var/cache/nginx \
   && apk del .build-deps \
+  && chmod +x /usr/local/bin/about \
   && rm -rf /tmp/*
